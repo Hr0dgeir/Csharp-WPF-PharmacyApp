@@ -1,0 +1,87 @@
+﻿<Window x:Class="WpfApp1.Set_price"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Set price" WindowStartupLocation="CenterScreen" Icon="image/pharmacy.png" Height="450" Width="500" ResizeMode="NoResize" Background="Black">
+    <Grid Loaded="Grid_Loaded">
+        <DataGrid x:Name="show_price">
+            <DataGrid.Style>
+                <Style TargetType="DataGrid">
+                    <Setter Property="Height" Value="200"/>
+                    <Setter Property="Width" Value="350"/>
+                    <Setter Property="Margin" Value="0,0,0,200"/>
+                    <Setter Property="Background" Value="White"/>
+                </Style>
+            </DataGrid.Style>
+        </DataGrid>
+
+        <TextBox x:Name="txt_id">
+            <TextBox.Style>
+                <Style TargetType="TextBox">
+                    <Setter Property="Height" Value="20"/>
+                    <Setter Property="Width" Value="100"/>
+                    <Setter Property="Margin" Value="0,0,0,-60"/>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
+
+        <TextBox x:Name="txt_price">
+            <TextBox.Style>
+                <Style TargetType="TextBox">
+                    <Setter Property="Height" Value="20"/>
+                    <Setter Property="Width" Value="100"/>
+                    <Setter Property="Margin" Value="0,0,0,-130"/>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
+        <Button x:Name="btn_set_price" Click="Button_Click">
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Height" Value="20"/>
+                    <Setter Property="Width" Value="80"/>
+                    <Setter Property="Margin" Value="0,0,0,-200"/>
+                    <Setter Property="Content" Value="Set Price"/>
+                </Style>
+            </Button.Style>
+        </Button>
+
+        <Label>
+            <Label.Style>
+                <Style TargetType="Label">
+                    <Setter Property="Content" Value="Id"/>
+                    <Setter Property="Margin" Value="-0,0,110,-60"/>
+                    <Setter Property="Height" Value="30"/>
+                    <Setter Property="Width" Value="50"/>
+                    <Setter Property="Foreground" Value="White"/>
+                </Style>
+            </Label.Style>
+        </Label>
+
+        <Label>
+            <Label.Style>
+                <Style TargetType="Label">
+                    <Setter Property="Content" Value="Price"/>
+                    <Setter Property="Margin" Value="-0,0,130,-130"/>
+                    <Setter Property="Height" Value="30"/>
+                    <Setter Property="Width" Value="50"/>
+                    <Setter Property="Foreground" Value="White"/>
+                </Style>
+            </Label.Style>
+        </Label>
+
+        <Button x:Name="btn_show_mainwindows" Click="btn_show_mainwindows_Click">
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Height" Value="20"/>
+                    <Setter Property="Width" Value="30"/>
+                    <Setter Property="Margin" Value="0,0,-440,380"/>
+                    <Setter Property="Content" Value="↩"/>
+                </Style>
+            </Button.Style>
+        </Button>
+
+    </Grid>
+</Window>

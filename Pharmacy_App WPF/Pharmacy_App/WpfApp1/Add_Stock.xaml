@@ -1,0 +1,122 @@
+﻿<Window x:Class="WpfApp1.Add_Stock"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Add_Stock" Height="450" Width="400" WindowStartupLocation="CenterScreen" Background="Black" ResizeMode="NoResize" Icon="image/pharmacy.png">
+    <Grid Loaded="Grid_Loaded" >
+        <DataGrid x:Name="Data_grid">
+            <DataGrid.Style>
+                <Style TargetType="DataGrid">
+                    <Setter Property="Height" Value="120"/>
+                    <Setter Property="Width" Value="300"/>
+                    <Setter Property="Margin" Value="0,-250,0,0"/>
+                    <Setter Property="Background" Value="DarkCyan"/>
+                </Style>
+            </DataGrid.Style>
+        </DataGrid>
+
+        <TextBox x:Name="txt_Stock">
+            <TextBox.Style>
+                <Style TargetType="TextBox">
+                    <Setter Property="Height" Value="25"/>
+                    <Setter Property="Width" Value="90"/>
+                    <Setter Property="Margin" Value="0,0,0,0"/>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
+
+        <Button x:Name="btn_delete" Click="btn_delete_Click">
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Content" Value="Delete Data"/>
+                    <Setter Property="Height" Value="25"/>
+                    <Setter Property="Width" Value="90"/>
+                    <Setter Property="Margin" Value="-0,100,-200,0"/>
+
+                </Style>
+            </Button.Style>
+        </Button>
+
+        <Button x:Name="btn_set_stock" Click="btn_set_Click">
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Content" Value="Set Stock"/>
+                    <Setter Property="Height" Value="25"/>
+                    <Setter Property="Width" Value="90"/>
+                    <Setter Property="Margin" Value="-0,0,-200,0"/>
+
+                </Style>
+            </Button.Style>
+        </Button>
+
+        <TextBox x:Name="txt_delete">
+            <TextBox.Style>
+                <Style TargetType="TextBox">
+                    <Setter Property="Height" Value="25"/>
+                    <Setter Property="Width" Value="90"/>
+                    <Setter Property="Margin" Value="-0,100,0,0"/>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
+
+        <TextBox x:Name="txt_search">
+            <TextBox.Style>
+                <Style TargetType="TextBox">
+                    <Setter Property="Height" Value="25"/>
+                    <Setter Property="Width" Value="90"/>
+                    <Setter Property="Margin" Value="-0,-90,0,0"/>
+                    <Setter Property="Text" Value="Searh id"/>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
+
+        <Label>
+            <Label.Style>
+                <Style TargetType="Label">
+                    <Setter Property="Content" Value="Delete"/>
+                    <Setter Property="Margin" Value="-0,100,130,0"/>
+                    <Setter Property="Height" Value="30"/>
+                    <Setter Property="Width" Value="50"/>
+                    <Setter Property="Foreground" Value="White"/>
+                </Style>
+            </Label.Style>
+        </Label>
+
+        <Label>
+            <Label.Style>
+                <Style TargetType="Label">
+                    <Setter Property="Content" Value="Search"/>
+                    <Setter Property="Margin" Value="-0,-85,130,0"/>
+                    <Setter Property="Height" Value="30"/>
+                    <Setter Property="Width" Value="50"/>
+                    <Setter Property="Foreground" Value="White"/>
+                </Style>
+            </Label.Style>
+        </Label>
+
+        <Label>
+            <Label.Style>
+                <Style TargetType="Label">
+                    <Setter Property="Content" Value="Set Stock"/>
+                    <Setter Property="Margin" Value="-0,0,140,0"/>
+                    <Setter Property="Height" Value="30"/>
+                    <Setter Property="Width" Value="62"/>
+                    <Setter Property="Foreground" Value="White"/>
+                </Style>
+            </Label.Style>
+        </Label>
+        <Button x:Name="btn_return" Click="btn_return_Click">
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Height" Value="25"/>
+                    <Setter Property="Width" Value="25"/>
+                    <Setter Property="Content" Value="↩"/>
+                    <Setter Property="Margin"  Value="0,0,-360,380"/>
+                </Style>
+            </Button.Style>
+        </Button>
+    </Grid>
+</Window>

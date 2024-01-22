@@ -1,0 +1,135 @@
+﻿<Window x:Class="WpfApp1.register_login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="register_login" Height="450" Width="350" Background="Black" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Icon="image/pharmacy.png" Loaded="Window_Loaded">
+    <Grid>
+        <Label>
+            <Label.Style>
+                <Style TargetType="Label">
+                    <Setter Property="Content" Value="Welcome Pharmacy App"/>
+                    <Setter Property="Width" Value="140"/>
+                    <Setter Property="Height" Value="26"/>
+                    <Setter Property="Foreground" Value="White"/>
+                    <Setter Property="Margin" Value="0,0,0,385"/>
+                </Style>
+            </Label.Style>
+        </Label>
+
+        <TextBox x:Name="txt_mail">
+            <TextBox.Style>
+                <Style TargetType="TextBox">
+                    <Setter Property="Width" Value="110"/>
+                    <Setter Property="Height" Value="20"/>
+                    <Setter Property="Margin" Value="0,0,0,170"/>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
+
+        <Label>
+            <Label.Style>
+                <Style TargetType="Label">
+                    <Setter Property="Content" Value="Sign In"/>
+                    <Setter Property="Width" Value="90"/>
+                    <Setter Property="Height" Value="38"/>
+                    <Setter Property="Foreground" Value="White"/>
+                    <Setter Property="Margin" Value="0,0,30,300"/>
+                    <Setter Property="FontFamily" Value="Microsoft Ya Hei"/>
+                    <Setter Property="FontSize" Value="24"/>
+                </Style>
+            </Label.Style>
+        </Label>
+
+        <TextBox x:Name="txt_login_password" MaxLength="64">
+            <TextBox.Style>
+                <Style TargetType="TextBox">
+                    <Setter Property="Width" Value="110"/>
+                    <Setter Property="Height" Value="20"/>
+                    <Setter Property="Margin" Value="0,0,0,100"/>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
+
+        <Button x:Name="btn_sign_in" Click="btn_sign_in_Click">
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Width" Value="80"/>
+                    <Setter Property="Height" Value="20"/>
+                    <Setter Property="Margin" Value="0,0,0,0"/>
+                    <Setter Property="Content" Value="Sign in"/>
+                    <Setter Property="FontFamily" Value="Microsoft Ya Hei"/>
+                    <Setter Property="Background" Value="White"/>
+                    <Setter Property="Margin" Value="0,0,0,0"/>
+                </Style>
+            </Button.Style>
+        </Button>
+
+        <Label>
+            <Label.Style>
+                <Style TargetType="Label">
+                    <Setter Property="Content" Value="Don't have an account ? "/>
+                    <Setter Property="Margin" Value="0,0,150,-200"/>
+                    <Setter Property="FontFamily" Value="Microsoft Ya Hei"/>
+                    <Setter Property="FontSize" Value="15"/>
+                    <Setter Property="Width" Value="170"/>
+                    <Setter Property="Height" Value="38"/>
+                    <Setter Property="Foreground" Value="White"/>
+                </Style>
+            </Label.Style>
+        </Label>
+
+        <Button x:Name="Show_register" Click="Show_register_Click">
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Width" Value="100"/>
+                    <Setter Property="Height" Value="20"/>
+                    <Setter Property="Margin" Value="0,0,210,-250"/>
+                    <Setter Property="Content" Value="C̲r̲e̲a̲t̲e̲ ̲A̲ ̲A̲c̲c̲o̲u̲n̲t̲"/>
+                    <Setter Property="Background" Value="Transparent"/>
+                    <Setter Property="Foreground" Value="White"/>
+                    <Setter Property="FontSize" Value="12"/>
+                    <Setter Property="BorderBrush" Value="Transparent"/>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="FontSize" Value="13"/>
+                            <Setter Property="Height" Value="25"/>
+                            <Setter Property="Width" Value="105"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+
+        <Label>
+            <Label.Style>
+                <Style TargetType="Label">
+                    <Setter Property="Content" Value="E-mail"/>
+                    <Setter Property="Grid.Row" Value="1"/>
+                    <Setter Property="Height" Value="30"/>
+                    <Setter Property="Width" Value="60"/>
+                    <Setter Property="FontSize" Value="14"/>
+                    <Setter Property="Foreground" Value="White"/>
+                    <Setter Property="Margin" Value="-180,-300,0,-130"/>
+                </Style>
+            </Label.Style>
+        </Label>
+
+        <Label>
+            <Label.Style>
+                <Style TargetType="Label">
+                    <Setter Property="Content" Value="Password"/>
+                    <Setter Property="Grid.Row" Value="1"/>
+                    <Setter Property="Height" Value="30"/>
+                    <Setter Property="Width" Value="80"/>
+                    <Setter Property="FontSize" Value="14"/>
+                    <Setter Property="Foreground" Value="White"/>
+                    <Setter Property="Margin" Value="-180,-230,0,-130"/>
+                </Style>
+            </Label.Style>
+        </Label>
+
+    </Grid>
+</Window>
